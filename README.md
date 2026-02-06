@@ -1,4 +1,4 @@
-# Python_essentials1# Python Essentials 1 
+# Python_essentials1
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![PCEP](https://img.shields.io/badge/PCEP-Entry_Level-orange)
