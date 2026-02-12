@@ -224,6 +224,115 @@ The inner loop runs completely for **each iteration** of the outer loop.
 ### Misunderstanding Loop `else`
 Thinking it runs after every loop.
 
+## While and for loop examples with outputs
+
+- while: condition-based
+- for: sequence-based
+
+## while Loop
+Runs while condition is True.
+```python
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+```
+Output:
+```
+0
+1
+2
+3
+4
+```
+
+If condition is False initially, it never runs.
+```python
+i = 10
+while i < 5:
+    print(i)
+```
+Output: none
+
+Infinite loop example:
+```python
+while True:
+    print("Infinite")
+```
+
+## for Loop
+Iterates over a sequence.
+```python
+for i in range(5):
+    print(i)
+```
+Output:
+```
+0
+1
+2
+3
+4
+```
+
+## range()
+- start: inclusive
+- stop: exclusive
+- step: increment
+Examples:
+```python
+range(5)        # 0–4
+range(1, 5)     # 1–4
+range(1, 10, 2) # 1,3,5,7,9
+```
+
+## break
+Exits loop immediately.
+```python
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+```
+Output:
+```
+0
+1
+2
+```
+
+## continue
+Skips current iteration.
+```python
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+```
+Output:
+```
+0
+1
+3
+4
+```
+
+## Loop else
+Runs only if loop ends without break.
+```python
+for i in range(3):
+    print(i)
+else:
+    print("Done")
+```
+Output:
+```
+0
+1
+2
+Done
+```
+
 ---
 
 ## Summary (Mental Model)
